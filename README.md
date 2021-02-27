@@ -106,6 +106,7 @@ Variable name|Type|Default|Optional
 textaccept|`String`|Accept|Yes
 textcancel|`String`|Cancel|Yes
 message|`String`|Is that what you want to do?|Yes
+toggleColors|`Boolean`|false|Yes
 callback|`Function`|null|Yes
 fulllscreen|`Boolean`|false|Yes
 
