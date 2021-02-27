@@ -151,6 +151,7 @@ textaccept|`String`|Accept|Yes
 textcancel|`String`|Cancel|Yes
 default_value|`String`||Yes
 message|`String`|Tell me something|Yes
+toggleColors|`Boolean`|false|Yes
 callback|`Function`|null|Yes
 fulllscreen|`Boolean`|false|Yes
 
