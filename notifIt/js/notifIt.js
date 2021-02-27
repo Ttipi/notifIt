@@ -140,12 +140,8 @@
     function i(t) {
         function i() {
             if (null !== f) return f;
-            var classAccept="notifit_confirm_accept";
-            var classCancel="notifit_confirm_cancel";
-            if(!l.toggleColors) {classAccept="notifit_confirm_accept"; classCancel="notifit_confirm_cancel";}
-            else {classAccept="notifit_confirm_cancel"; classCancel="notifit_confirm_accept";}
-            var t = s("<button>", { class: classAccept, text: l.textaccept }),
-                i = s("<button>", { class: classCancel, text: l.textcancel }),
+            var t = s("<button>", { class: "notifit_confirm_accept", text: l.textaccept }),
+                i = s("<button>", { class: "notifit_confirm_cancel", text: l.textcancel }),
                 n = s("<div>", { class: "notifit_confirm_message", text: l.message });
             return (f = s("<div>", { class: "notifit_confirm" })), f.append(n).append(t).append(i), (r = s("<div>", { class: "notifit_confirm_bg" })), f;
         }
@@ -181,7 +177,7 @@
             s("html").one("click", ".notifit_confirm_accept, .notifit_confirm_cancel", a);
         }
         var s = jQuery,
-            c = { textaccept: "Accept", textcancel: "Cancel", message: "Is that what you want to do?", toggleColors: false, fullscreen: !1, callback: null },
+            c = { textaccept: "Accept", textcancel: "Cancel", message: "Is that what you want to do?", fullscreen: !1, callback: null },
             l = s.extend({}, c, t),
             f = s(".notifit_confirm")[0] ? s(".notifit_confirm") : null,
             r = s(".notifit_confirm_bg")[0] ? s(".notifit_confirm_bg") : null;
@@ -190,12 +186,8 @@
     function n(t) {
         function i() {
             if (null !== f) return f;
-            var classAccept="notifit_prompt_accept";
-            var classCancel="notifit_prompt_cancel";
-            if(!l.toggleColors) {classAccept="notifit_prompt_accept"; classCancel="notifit_prompt_cancel";}
-            else {classAccept="notifit_prompt_cancel"; classCancel="notifit_prompt_accept";}
-            var t = s("<button>", { class: classAccept, text: l.textaccept }),
-                i = s("<button>", { class: classCancel, text: l.textcancel }),
+            var t = s("<button>", { class: "notifit_prompt_accept", text: l.textaccept }),
+                i = s("<button>", { class: "notifit_prompt_cancel", text: l.textcancel }),
                 n = s("<p>", { class: "notifit_prompt_message", text: l.message }),
                 o = s("<input>", { type: "text", class: "notifit_prompt_input", value: l.default_value });
             return (f = s("<div>", { class: "notifit_prompt" })), f.append(n).append(o).append(i).append(t), (r = s("<div>", { class: "notifit_prompt_bg" })), f;
@@ -241,7 +233,7 @@
             s("html").one("click", ".notifit_prompt_accept, .notifit_prompt_cancel", a);
         }
         var s = jQuery,
-            c = { message: "Tell me something", default_value: "", textaccept: "Accept", textcancel: "Cancel", toggleColors: false, fullscreen: !1, callback: null },
+            c = { message: "Tell me something", default_value: "", textaccept: "Accept", textcancel: "Cancel", fullscreen: !1, callback: null },
             l = s.extend({}, c, t),
             f = s(".notifit_prompt")[0] ? s(".notifit_prompt") : null,
             r = s(".notifit_prompt_bg")[0] ? s(".notifit_prompt_bg") : null;
